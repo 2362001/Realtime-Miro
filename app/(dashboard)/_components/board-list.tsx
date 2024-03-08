@@ -1,10 +1,8 @@
 "use client";
 
-import { useQuery } from "convex/react";
-import React from "react";
-import { api } from "@/convex/_generated/api";
-import { EmptySearch } from "./empty-search";
+import { EmptyBoards } from "./empty-board";
 import { EmptyFavorites } from "./empty-favorites";
+import { EmptySearch } from "./empty-search";
 
 interface BoardListProps {
   orgId?: string;
@@ -27,11 +25,11 @@ const BoardList = ({ orgId, query }: BoardListProps) => {
     return <EmptyFavorites/>;
   }
 
-  // if (!data?.length) {
-  //   return <EmptyBoards />;
-  // }
+  if (!data?.length) {
+    return <EmptyBoards />;
+  }
 
-  return <div>Board List</div>;
+  return <div>Board Listssssssssss</div>;
 };
 
 export default BoardList;

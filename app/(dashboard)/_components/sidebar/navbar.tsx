@@ -6,7 +6,8 @@ import { SearchInput } from "../search-input";
 
 const Navbar = () => {
   const { organization } = useOrganization();
-
+  console.log(organization);
+  
   return (
     <div className="flex items-center gap-x-4 p-5 bg-blue-500">
       <div className="hidden lg:flex lg:flex-1">
