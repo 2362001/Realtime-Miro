@@ -22,6 +22,7 @@ export const List = () => {
           name={mem.organization.name}
           imageUrl={mem.organization.imageUrl}
         />
+        
       ))}
     </ul>
   );
